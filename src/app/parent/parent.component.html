@@ -1,0 +1,4 @@
+<p>je suis le parent</p>
+<input type="text" #pcomponent (keyup)="0" />
+<p>Valeur de parent est : {{CData}}</p>
+<app-child  [PData]="pcomponent.value" (childEvent)="CData=$event"></app-child>
